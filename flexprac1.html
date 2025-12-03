@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <style>
+        body{
+            background-color:gainsboro ;
+        }
+        .container{
+            justify-content:center;
+            gap:10px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            background-color:white ;
+            border-radius:10px;
+            height:20vh;
+        }
+        .box
+        {
+            width:100px;
+            height:100px;
+           
+            color: black;
+            flex:1;
+            padding: 20px;
+            box-shadow:grey;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reponsive flex cards</h1>
+    <div class="container">
+        <div class="box"><img src="D:\coffee.jpg" alt="image" height="200px" width="200px"></div>
+        <div class="box"><p>very iceeuhfrmwwjwejerm</p></div>
+    </div>
+</body>
+</html>
