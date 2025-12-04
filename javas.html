@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <style>
+            body{
+                background-color:lightcyan;
+            }
+            table{
+                margin-top:100px;
+                margin-left:300px;
+                font-size:20px;
+                padding:10px;
+                background-color:rgba(211, 211, 211, 0.123);
+            }
+            h1{
+                text-align:center;
+                color:rgba(0, 0, 1, 0.8);
+            }
+            input{
+                font-size:18px;
+            }
+            button{
+                font-size:18px;
+                padding:5px;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+        </style>
+        <script>
+            function sum() {
+                let m=parseInt(document.getElementById("t").value);
+                let k=parseInt(document.getElementById("t1").value);
+                document.getElementById("t2").value=m+k;
+               
+            }
+            function sub() {
+                let m=parseInt(document.getElementById("t").value);
+                let k=parseInt(document.getElementById("t1").value);
+                document.getElementById("t2").value=m-k;
+               
+            }
+            function mul() {
+                let m=parseInt(document.getElementById("t").value);
+                let k=parseInt(document.getElementById("t1").value);
+                document.getElementById("t2").value=m*k;
+               
+            }
+            function div() {
+                let m=parseInt(document.getElementById("t").value);
+                let k=parseInt(document.getElementById("t1").value);
+                document.getElementById("t2").value=m/k;
+               
+            }
+        </script>
+    </head>
+    <body>
+        <h1>SIMPLE CALCULATOR</h1>
+        <table>
+        <tr>
+           <td> <label>FIRST NUMBER:</label></td>
+        <td><input type="text"  id="t"></td>
+    </tr>
+        <tr>
+            <td><label>SECOND NUMBER:</label></td>
+        <td><input type="text"  id="t1"><td>
+        </tr>
+        <tr>
+            <td><label>ANSWER:</label></td>
+        <td><input type="text"  id="t2"></td>
+        <tr>
+            <td><button  onclick="sum()">ADD</button></td>
+        <td><button  onclick="sub()">SUB</button></td>
+        </tr>
+        <tr>
+            <td><button  onclick="mul()">MUL</button></td>
+        <td><button  onclick="div()">DIV</button></td>
+    </tr>
+        
+    </table>
+        
+    </body>
