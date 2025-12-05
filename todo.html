@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+     <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <script>
+        function press(){
+            let h=document.getElementById("h1").value;
+            let p=document.getElementById("yu");
+            let o=document.createElement("li");
+            let c=document.createElement("button");
+            
+o.innerHTML=h;
+c.innerHTML="delete";
+document.getElementById("h1").value=""
+c.onclick=function(){
+    p.removeChild(o);
+}
+o.appendChild(c);
+p.appendChild(o);
+            
+        }
+    </script>
+</head>
+<body id="main">
+    <h1>TODO LIST</h1>
+    <input type="text" id="h1"></input>
+    <button  onclick="press()">click me</button>
+     <ul id="yu"></ul>
+</body>
+</html>
